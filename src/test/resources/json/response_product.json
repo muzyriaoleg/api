@@ -1,0 +1,221 @@
+{
+  "entry": {
+    "configurationInfos": [],
+    "displayOrder": 0,
+    "entryNumber": 0,
+    "product": {
+      "availableForPickup": true,
+      "baseOptions": [
+        {
+          "selected": {
+            "code": "2876350",
+            "priceData": {
+              "currencyIso": "EUR",
+              "value": 1.99
+            },
+            "stock": {
+              "stockLevel": 505
+            },
+            "url": "/kruidvat-sensitive-handzeep-navulling/p/2876350",
+            "variantOptionQualifiers": []
+          },
+          "variantType": "VariantProduct"
+        }
+      ],
+      "baseProduct": "BP_2876350",
+      "categories": [
+        {
+          "code": "promo_2220391",
+          "name": "KRUIDVAT HANDZEEP NAVULLING 2V3.-"
+        },
+        {
+          "code": "promo_1002897",
+          "name": "20% op 2 artikelen Reactivatieprogramma"
+        },
+        {
+          "code": "promo_1007439",
+          "name": "Cash 4 Points 2,50 korting tiv 450 punten langlopend"
+        },
+        {
+          "code": "promo_1008009",
+          "name": "1x 20% korting Reactivatie"
+        },
+        {
+          "code": "promo_2383611",
+          "name": "KV HANDZEEP NAVUL 2V3.00"
+        },
+        {
+          "code": "promo_1012013",
+          "name": "2x 20% extra ongeregistreerde Members Koopavond"
+        },
+        {
+          "code": "promo_1002895",
+          "name": "20% op 1 KV artikel Reactivatieprogramma"
+        },
+        {
+          "code": "promo_1012010",
+          "name": "3x 20% extra  Members Koopavond"
+        },
+        {
+          "code": "promo_1012011",
+          "name": "20% EXTRA KORTING KOOPAVOND"
+        },
+        {
+          "code": "promo_1012012",
+          "name": "BACK-UP PLU 2448 20% EXTRA KORTING KOOPAVOND"
+        },
+        {
+          "code": "promo_2458751",
+          "name": "Kruidvat handzeep voor 1.49"
+        },
+        {
+          "code": "promo_1013332"
+        },
+        {
+          "code": "promo_1013331"
+        },
+        {
+          "code": "promo_2482351",
+          "name": "Kruidvat handzeep navulling"
+        },
+        {
+          "code": "promo_1013855"
+        },
+        {
+          "code": "promo_1013856"
+        },
+        {
+          "code": "promo_1013871"
+        },
+        {
+          "code": "promo_1013872"
+        },
+        {
+          "code": "promo_1013908"
+        },
+        {
+          "code": "promo_2558501",
+          "name": "Kruidvat handzeep navulling"
+        },
+        {
+          "code": "promo_2646741",
+          "name": "Kruidvat handzeep navulling"
+        },
+        {
+          "code": "promo_1015999"
+        },
+        {
+          "code": "promo_2595291",
+          "name": "Kruidvat handzeep navulling"
+        },
+        {
+          "code": "promo_1017011"
+        },
+        {
+          "code": "promo_1017012"
+        },
+        {
+          "code": "promo_1017064"
+        },
+        {
+          "code": "promo_1017280"
+        },
+        {
+          "code": "promo_1017279"
+        },
+        {
+          "code": "promo_1017281"
+        },
+        {
+          "code": "promo_1017282"
+        },
+        {
+          "code": "promo_1017283"
+        },
+        {
+          "code": "promo_2843221",
+          "name": "Kruidvat handzeep 2 voor 3.00"
+        },
+        {
+          "code": "promo_1018314"
+        },
+        {
+          "code": "promo_1018315"
+        },
+        {
+          "code": "promo_1018470"
+        },
+        {
+          "code": "promo_1018471"
+        },
+        {
+          "code": "promo_1018472"
+        },
+        {
+          "code": "promo_1018473"
+        },
+        {
+          "code": "promo_2908061"
+        },
+        {
+          "code": "mondkapjes-zeep-en-meer",
+          "name": "mondkapjes, zeep en meer"
+        },
+        {
+          "code": "promo_1019939"
+        },
+        {
+          "code": "promo_1019944"
+        },
+        {
+          "code": "promo_1019941"
+        },
+        {
+          "code": "promo_1019940"
+        },
+        {
+          "code": "promo_1019942"
+        },
+        {
+          "code": "promo_1019943"
+        },
+        {
+          "code": "promo_2964911",
+          "name": "Kruidvat handzeep 2 voor 3.00"
+        }
+      ],
+      "code": "2876350",
+      "configurable": false,
+      "homeDeliveryOnly": false,
+      "isLoyaltyProduct": false,
+      "maxOrderQuantity": 15,
+      "name": "Kruidvat Sensitive Handzeep Navulling",
+      "pharmacy": false,
+      "price": {
+        "currencyIso": "EUR",
+        "formattedValue": "€ 1,99",
+        "oldValueLabel": "product.pricetag.from.suggested.manufacturer",
+        "priceType": "BUY",
+        "value": 1.99
+      },
+      "productLoyaltyPoints": 0,
+      "purchasable": true,
+      "stock": {
+        "stockLevel": 505,
+        "stockLevelStatus": "inStock"
+      },
+      "url": "/kruidvat-sensitive-handzeep-navulling/p/2876350"
+    },
+    "quantity": 1,
+    "redeemLoyaltyPoints": 0,
+    "redeemLoyaltyPointsForProduct": 0,
+    "rewardLoyaltyPoints": 0,
+    "totalPrice": {
+      "currencyIso": "EUR",
+      "value": 1.99
+    }
+  },
+  "quantity": 1,
+  "quantityAdded": 1,
+  "statusCode": "success"
+}

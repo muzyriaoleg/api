@@ -1,0 +1,6 @@
+{
+  "product": {
+    "code": "${productId}"
+  },
+  "quantity": ${quantity}
+}
