@@ -2,7 +2,6 @@ package com.cruidvat.ui.pages;
 
 import com.cruidvat.constants.Urls;
 import com.cruidvat.ui.driver.DriverManager;
-import com.cruidvat.ui.driver.WebDriverWaiter;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -16,6 +15,7 @@ public abstract class Page {
     protected Page() {
         setPageUrl(Urls.BASE_URL);
     }
+
     public void setPageUrl(String pageUrl) {
         this.pageUrl = pageUrl;
     }
