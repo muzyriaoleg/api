@@ -58,3 +58,4 @@ fabric.properties
 /cucumber-html-reports
 /cucumberReport
 NewProject.iml
+/logs

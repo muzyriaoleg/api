@@ -14,7 +14,8 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import java.util.HashMap;
 import java.util.Map;
-import org.assertj.core.api.Assertions;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.assertj.core.api.SoftAssertions;
 
 public class CartSteps {
@@ -22,9 +23,12 @@ public class CartSteps {
     CartService cartService = new CartService();
     CartPage cartPage = new CartPage();
 
+    static Logger log = LogManager.getLogger(CartSteps.class);
+
     @Given("^Cart is created$")
     public void createCart() {
         SessionStorage.add("CartGuid", cartService.createCart());
+        log.info("New card is created via API");
     }
 
     @And("^Product (.+) with quantity (.+) is added to the cart$")

@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    plugin = { "pretty", "html:target/cucumber-reports/CucumberTest.html", "json:target/cucumber-reports/CucumberTest.json" },
+    plugin = { "pretty", "html:report.html", "com.epam.reportportal.cucumber.StepReporter" },
     monochrome = true,
     tags = "@Regression",
     glue = "com.cruidvat",
