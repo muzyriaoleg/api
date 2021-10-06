@@ -62,7 +62,7 @@ public class CartSteps {
     public void checkProductInCart(String productName, String productQuantity) {
         SoftAssertions assertions = new SoftAssertions();
         Map<String, String> products = cartPage.getProductsWirthQuantity();
-        assertions.assertThat(products.size()).isEqualTo(1);
+        assertions.assertThat(products.size()).isEqualTo(2);
         assertions.assertThat(products.containsKey(productName)).as("Product name doesn't match")
             .isTrue();
         assertions.assertThat(products.containsValue(productQuantity))
