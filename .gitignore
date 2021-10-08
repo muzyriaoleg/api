@@ -59,3 +59,4 @@ fabric.properties
 /cucumberReport
 NewProject.iml
 /logs
+/src/test/resources/screenshots
