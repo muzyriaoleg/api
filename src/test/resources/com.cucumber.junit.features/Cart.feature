@@ -1,4 +1,4 @@
-@Regression @REQ_AD-AD-119
+@Regression @REQ_AD-119
 Feature: Creating cart and adding product
 
 
