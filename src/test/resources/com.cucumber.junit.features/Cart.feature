@@ -1,5 +1,5 @@
 @Regression
-@REQ_ATLAS-20
+@REQ_ATLAS-31
 Feature: Creating cart and adding product
 
 
