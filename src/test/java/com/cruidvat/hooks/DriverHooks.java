@@ -20,7 +20,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class DriverHooks {
 
     private final String SCREENSHOT_PATH_TEMPLATE ="src/test/resources/screenshots/%s.png";
-    static Logger log = LogManager.getLogger(ScreenshotHooks.class);
+    static Logger log = LogManager.getLogger(DriverHooks.class);
 
     @Before(order = 0)
     public void setupDriver() {
