@@ -27,8 +27,10 @@ public class CartSteps {
 
     @Given("^Cart is created$")
     public void createCart() {
-        SessionStorage.add("CartGuid", cartService.createCart());
-        log.info("New card is created via API");
+        String cartId = cartService.createCart();
+        SessionStorage.add("CartGuid", cartId);
+        log.info("New cart is created");
+        log.debug("CartId {} saved to the local storage", cartId);
     }
 
     @And("^Product (.+) with quantity (.+) is added to the cart$")
@@ -38,6 +40,8 @@ public class CartSteps {
         product.put("quantity", quantity);
         Response response = cartService
             .addProductsToCart(SessionStorage.get("CartGuid"), product);
+        log.info("Product {} with quantity {} is added to the card", productId, quantity);
+
         response.then().assertThat()
             .body(matchesJsonSchema(
                 FileConverter.fileToString("src/test/resources/json/response_product.json")));
@@ -53,15 +57,19 @@ public class CartSteps {
     @When("^User open the Cart page$")
     public void openCartPage() {
         cartPage.open();
+        log.info("Cart page is opened");
         DriverManager.clearCookies();
+        log.debug("Cleared browser cookies");
         DriverManager.setCookies("kvn-cart", SessionStorage.get("CartGuid"));
         DriverManager.getDriverInstance().navigate().refresh();
+        log.debug("Added kvn-cart cookies with value {}", SessionStorage.get("CartGuid"));
     }
 
     @Then("^Product \"(.+)\" is added with quantity (.+)$")
     public void checkProductInCart(String productName, String productQuantity) {
         SoftAssertions assertions = new SoftAssertions();
         Map<String, String> products = cartPage.getProductsWirthQuantity();
+        log.debug("Selected list of products from Cart page");
         assertions.assertThat(products.size()).isEqualTo(2);
         assertions.assertThat(products.containsKey(productName)).as("Product name doesn't match")
             .isTrue();
@@ -72,9 +80,9 @@ public class CartSteps {
 
     @And("^Product (.+) with quantity (.+) is added to the cart using pojo$")
     public void addProductToCartPojo(String productId, int quantity) {
-
         Response response = cartService
             .addProductsToCartWithPojo(SessionStorage.get("CartGuid"), productId, quantity);
+        log.debug("Selected list of products from Cart page");
         response.then().assertThat()
             .body(matchesJsonSchema(
                 FileConverter.fileToString("src/test/resources/json/response_product.json")));
