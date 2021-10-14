@@ -30,16 +30,10 @@ public class DriverHooks {
     @After(order = 10)
     public void takeScreenshot(Scenario scenario) {
         if (scenario.isFailed()) {
-            File screenshot = ((TakesScreenshot) DriverManager.getDriverInstance()).getScreenshotAs(
-                OutputType.FILE);
-            try {
-                FileUtils
-                    .copyFile(screenshot, new File("src/test/resources/screenshots/sr1s7ht.png"));
-            } catch (IOException e) {
-                log.error("Failed to create screenshot file", e);
+            if (scenario.isFailed()) {
+                byte[] screenshot = ((TakesScreenshot) DriverManager.getDriverInstance()).getScreenshotAs(OutputType.BYTES);
+                scenario.attach(screenshot, "image/png", scenario.getName());
             }
-            log.info("RP_MESSAGE#FILE#{}#{}", screenshot.getAbsolutePath(),
-                "Screenshot taken");
         }
 
     }
