@@ -36,9 +36,13 @@ public class DriverHooks {
 
     @After(order = 10)
     public void takeScreenshot(Scenario scenario) {
+//        if (scenario.isFailed()) {
+//            File screenshot = createScreenshotFile();
+//            log.info(createReportPortalMessage(screenshot));
+//        }
         if (scenario.isFailed()) {
-            File screenshot = createScreenshotFile();
-            log.info(createReportPortalMessage(screenshot));
+            byte[] screenshot = ((TakesScreenshot) DriverManager.getDriverInstance()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", scenario.getName());
         }
     }
 
