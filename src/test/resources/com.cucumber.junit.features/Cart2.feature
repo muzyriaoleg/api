@@ -1,4 +1,5 @@
 @Regression
+@REQ_ATLAS-72
 Feature: Creating cart and adding product 2
 
 
