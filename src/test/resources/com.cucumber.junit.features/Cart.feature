@@ -15,4 +15,4 @@ Feature: Creating cart and adding product
     Given Cart is created
     And Product 2876350 with quantity 2 is added to the cart using pojo
     When User open the Cart page
-    Then Product "Kruidvat Sensitive Handzeep Navulling" is added with quantity 3
+    Then Product "Kruidvat Sensitive Handzeep Navulling" is added with quantity 2
